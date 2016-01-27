@@ -1,0 +1,248 @@
+body{
+	font-family: 微软雅黑,Arial;
+	height: 100%;
+}
+input,button,select,textarea{
+	outline:none;
+} 
+#title{
+	height: 100px;
+	background-color: #81bff0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.main{
+	width: 1000px;
+	margin: auto;
+}
+#logo{
+	padding-left: 10px;
+}
+#logo span{
+	display: block;
+	padding-top: 15px;
+	font-size: 46px;
+	color: white;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+#buttons{
+	margin-top: 20px;
+	margin-left: 10px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.button{
+	float: left;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.selectarea{
+	width: 100px;
+	height: 45px;
+	font-size: 18px;
+	padding-left: 10px;
+}
+.selectarea:hover{
+	border: 1px solid #3a97e0;
+}
+.selectarea:focus{
+	border: 1px solid #7f8eeb;
+}
+#button2{
+	margin-left: 100px;
+}
+#copyall{
+
+}
+#button3{
+	float: right;
+}
+#button3 div{
+	width: 130px;
+	height: 45px;
+	text-align: center;
+	background-color: #ff8a91;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+#button3 a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.intro{
+	font-size: 18px;
+	padding-right: 10px;
+}
+#textareas{
+	clear: both;
+}
+.textarea{
+	margin-top: 20px;
+	position: relative;
+}
+.focus{
+	border: 1px solid #7f8eeb !important;
+}
+.text{
+	width: 470px;
+	height: 200px;
+	border: 0;
+	resize: none;
+	outline: 0;
+	color: #666;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-left: 10px;
+	overflow: hidden;
+	padding-bottom: 13px;
+}
+#textarea1{
+	float: left;
+	border: 1px solid #a9a9a9;
+}
+#textarea1:hover{
+	border: 1px solid #3a97e0;
+}
+#textarea2{
+	float: right;
+	border: 1px solid #c6c6c6;
+}
+.textbutton{
+	position: absolute;
+	display: none;
+	right: 10px;
+	top: 10px;
+	width: 50px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: rgba(198,87,87,0.8);
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 35px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+#blank{
+	clear: both;
+	height: 1px;
+}
+#totop{
+	display: none;
+	position: fixed;
+	z-index: 999;
+	bottom: 30px;
+	right: 30px;
+	width: 30px;
+	height: 30px;
+	background-color: rgba(22,22,22,0.6);
+	border-radius: 3px;
+	background-image: url(../image/arrows.png);
+	background-repeat:  no-repeat;
+	background-position: -30px 0;
+}
+footer{
+	clear: both;
+	width: 100%;
+	height: 130px;
+	margin-top: 30px;
+	bottom: 0;
+	background-color: #fffd8a;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+footer div{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #999;
+	line-height: 25px;
+}
+@media all and (max-width: 1000px){
+.main{
+	width: 490px;
+}
+#buttons{
+	position: relative;
+}
+.button{
+	float: none;
+}
+#button2{
+	margin-left: 0;
+	margin-top: 10px;
+}
+#button3{
+	float: none;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+}
+#textarea1{
+	float: none;
+}
+#textarea2{
+	float: none;
+}
+footer{
+	margin-top: 20px;
+	height: 100px;
+}
+}
+@media all and (max-width: 490px){
+.main{
+	width: 100%;
+}
+#button3{
+	right: 5px;
+}
+#button3 div{
+	width: 100px;
+}
+.textarea{
+	width: 97%;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+}
+.text{
+	margin: auto;
+	width: 95%;
+}
+#logo{
+	padding-left: 13px;
+}
+#logo span{
+	padding-top: 22px;
+	font-size: 43px;
+}
+}

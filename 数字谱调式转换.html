@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="telephone=no" name="format-detection">
+	<title>数字谱调式转换</title>
+	<link rel="stylesheet" href="static/css/mormalize.css">
+	<link rel="stylesheet" href="static/css/index.css">
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/main.js"></script>
+	<script src="static/js/changeIndex.js"></script>
+</head>
+<body>
+	<header id="title">
+		<div class="main">
+			<div id="logo">
+				<span>数字谱调式转换</span>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<div id="buttons">
+			<div class="button" id="button1">
+				<span class="intro">原谱调式</span>
+				<select name="" id="beforemode" class="selectarea">
+					<option value="0" selected="selected">1 = C</option>
+					<option value="1">1 = #C</option>
+					<option value="2">1 = D</option>
+					<option value="3">1 = #D</option>
+					<option value="4">1 = E</option>
+					<option value="5">1 = F</option>
+					<option value="6">1 = #F</option>
+					<option value="7">1 = G</option>
+					<option value="8">1 = #G</option>
+					<option value="9">1 = A</option>
+					<option value="10">1 = #A</option>
+					<option value="11">1 = B</option>
+				</select>
+			</div>
+			<div class="button" id="button2">
+				<span class="intro">转换调式</span>
+				<select name="" id="aftermode" class="selectarea">
+					<option value="0" selected="selected">1 = C</option>
+					<option value="1">1 = #C</option>
+					<option value="2">1 = D</option>
+					<option value="3">1 = #D</option>
+					<option value="4">1 = E</option>
+					<option value="5">1 = F</option>
+					<option value="6">1 = #F</option>
+					<option value="7">1 = G</option>
+					<option value="8">1 = #G</option>
+					<option value="9">1 = A</option>
+					<option value="10">1 = #A</option>
+					<option value="11">1 = B</option>
+				</select>
+			</div>
+			<div class="button" id="button3">
+				<div id="start">
+					<a>开始转换</a>
+				</div>
+			</div>
+		</div>
+		<div id="textareas">
+			<div class="textarea" id="textarea1">
+				<div id="cleanall" class="textbutton">清除</div>
+				<textarea name="" class="text" id="beforetext" cols="30" rows="10" spellcheck="false" placeholder="在这里输入或复制数字谱"></textarea>
+			</div>
+			<div class="textarea" id="textarea2">
+				<div id="selectall" class="textbutton">全选</div>
+				<textarea name="" class="text"  id="aftertext" cols="30" rows="10" spellcheck="false" placeholder="转换后的内容" readonly="readonly"></textarea>
+			</div>
+		</div>
+	</div>
+	<div id="blank"></div>
+	<div id="totop"></div>
+	<footer>
+		<div>制作人：IwYvI<br>2015 年4月</div>
+	</footer>
+</body>
+</html>

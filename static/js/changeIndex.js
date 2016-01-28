@@ -10,6 +10,11 @@ IwYvI-Viring
 新增函数
 bracketMatch()
  */
+/*
+2016.1.28
+修改内容
+修正多括号匹配数目错误
+ */
 
 var indexMap = ["#","1","2","3","4","5","6","7","(",")","[","]","（","）","【","】"," "];
 var toneMap = ["1","#1","2","#2","3","4","#4","5","#5","6","#6","7"];
@@ -124,20 +129,32 @@ function charChange (charIndex, mode) {
 		//处理音高的括号问题
 		if(height != tempHeight){
 			if(height > tempHeight){
-				for(var i = tempHeight; i <= height; i++){
+				for(var i = tempHeight + 1; i <= height; i++){
 					if(i<0){
 						result += ")";
 					}else if(i>0){
 						result +="[";
-					}
+					}else{
+                        if (tempHeight == -1){
+                            result += ")";
+                        }else if(tempHeight == 1){
+                            result += "[";
+                        }
+                    }
 				}
 			}else if(height < tempHeight){
-				for(var i = tempHeight; i >= height; i--){
+				for(var i = tempHeight - 1; i >= height; i--){
 					if(i<0){
 						result += "(";
 					}else if(i>0){
 						result +="]";
-					}
+					}else{
+                        if (tempHeight == -1){
+                            result += "(";
+                        }else if(tempHeight == 1){
+                            result += "]";
+                        }
+                    }
 				}
 			}
 			tempHeight = height;

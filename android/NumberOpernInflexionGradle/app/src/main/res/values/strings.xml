@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">数字谱调式转换</string>
+    <string name="action_about">关于</string>
+    <string name="action_autocopy">自动复制  </string>
+    <string name="action_cleanall">清除全部</string>
+    <string name="text_before">转调前数字谱</string>
+    <string name="text_after">转调后内容</string>
+    <string name="tip_before">转换前调式</string>
+    <string name="tip_after">转换后调式</string>
+</resources>

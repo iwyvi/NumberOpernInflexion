@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
         cc = new ChangeContent();
 
         SharedPreferences settings = this.getSharedPreferences("settings", MODE_PRIVATE);
-        autoCopy = settings.getBoolean("autocopy",true);
+        autoCopy = settings.getBoolean("autocopy",false);
 
         View btn = findViewById(R.id.btnFloatingAction);
         btn.setOnClickListener(new View.OnClickListener(){
